@@ -30,7 +30,7 @@ const Index = () => {
                 </Route>
 
                 <Route path={availableAuthRoutesPath}>
-                    <AuthProtected>
+                    {/* <AuthProtected> */}
                         <VerticalLayout>
                             <Switch>
                                 {authProtectedRoutes.map((route, idx) => (
@@ -43,7 +43,7 @@ const Index = () => {
                                 ))}
                             </Switch>
                         </VerticalLayout>
-                    </AuthProtected>
+                    {/* </AuthProtected> */}
                 </Route>
             </Switch>
         </React.Fragment>
